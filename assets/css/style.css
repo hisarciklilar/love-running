@@ -94,6 +94,10 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    /* below added for toggle elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -131,10 +135,23 @@ nav {
   box-shadow: 0 2px 2px #3a3a3a;
   /* below hides the display of nav  */
   display: none;
+  /* below added to move the nav elements after the parent */
+  top: 100%;
 }
 
+/* Nav toggle */
+/* target the nav element when checked - targeting is done by tilde ~ */
+#nav-toggle:checked~nav{
+  display: block;
+}
 
+#nav-toggle {
+  display: none;
+}
 
+.nav-toggle-label {
+  font-size: 2rem;
+}
 
 /* Main content */
 main {
