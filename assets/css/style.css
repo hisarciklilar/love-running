@@ -215,6 +215,23 @@ hr {
   margin: 5px 0;
 }
 
+#circle-cover-bg {
+  width: 90vw;
+  height: 90vw;
+  background: url("../images/reasons-image.webp") no-repeat top center / cover;
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+}
+
+#benefits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Footer */
 #social-networks {
   text-align: center;
