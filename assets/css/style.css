@@ -261,6 +261,22 @@ hr {
 #times h3 {
   color: #fafafafa;
 }
+
+/* GALLERY PAGE */
+#photos img {
+  /* Below ensures that photos fit the screen and there is no overflow */
+  width: 100%;
+  /* Below is added in case there is a missing linkfor a photo.  */
+  /* To ensure that alt text is readable in that case */
+  /* We did this because we added a line height of zero below */
+  line-height: 1em;
+}
+
+#photos {
+  /* Below removes the white space between photos because each photo is seen as text */
+  line-height: 0;
+}
+
 /* Footer */
 #social-networks {
   text-align: center;
