@@ -232,6 +232,31 @@ hr {
   justify-content: center;
 }
 
+#times {
+  background: url(../images/dublin-city.webp) no-repeat center / cover;
+  /* position: relative; */
+  /* Below handles responsivisivity without the need for a media query */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times > div {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  /* BElow ensures that the divs will not wrap on screens less than 400px wide */
+  /* Each div will expand to fill the available space in its own row  */
+  flex-basis: 200px;
+  flex-grow: 1;
+  /* Below creates a divide of meet-up times as a grid */
+  border: solid 2px white;
+}
+
+/* Override the header color for the meet-up time section */
+#times h3 {
+  color: #fafafafa;
+}
 /* Footer */
 #social-networks {
   text-align: center;
