@@ -284,6 +284,7 @@ hr {
 #signup {
   background-image: url(../images/signup-image.webp);
   background-size: cover;
+  /* below sets the position of the image  */
   background-position: 75%;
   flex-grow: 1;
   padding: 20px 10%;
