@@ -292,6 +292,14 @@ hr {
   color: #3a3a3a;
 }
 
+/* Media query large or landscape phones with 576px or higher */
+#photos {
+  /* photos to be displayed in 2 columns */
+  column-count: 2;
+  /* no gap between photos */
+  column-gap: 0;
+}
+
 /* Media query: tablets and larger (768px and higher) */
 @media screen and (min-width: 768px) {
   /* Header */
@@ -343,6 +351,12 @@ hr {
     text-align: end;
     align-self: flex-end;
   }
+
+  /* Gallery */
+  /* in tablets : will have three columns of photos instead of 2 */
+  #photos {
+    column-count: 3;
+  }
 }
 
 /* Large devices */
@@ -351,6 +365,12 @@ hr {
   #menu a:hover {
 border-bottom: 1px solid #3a3a3a;
     }
+  /* Gallery */
+  /* Will have 4 photos in a column in larger (laptops or desktops) devices */
+  #photos {
+    column-count: 4;
+  }
+
   }
   
  /* Devices with 1200px or larger  */
